@@ -22,6 +22,7 @@ for b in books_by_author(lib.books, "George Orwell"):
 
 # Lend a book
 try:
+    print("\nLending book with ISBN 2")
     lib.lend_book("2")
 except BookNotAvailableError as e:
     print(e)
